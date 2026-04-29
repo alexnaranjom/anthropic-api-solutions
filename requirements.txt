@@ -1,0 +1,4 @@
+anthropic==0.97.0
+python-dotenv==1.2.2
+jupyter
+ipykernel
