@@ -15,7 +15,7 @@ A hands-on learning path for the [Anthropic Claude API](https://docs.anthropic.c
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/<your-username>/anthropic-api-solutions.git
+git clone https://github.com/alexnaranjom/anthropic-api-solutions.git
 cd anthropic-api-solutions
 ```
 
