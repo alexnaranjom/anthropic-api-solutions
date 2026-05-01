@@ -1,14 +1,17 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS account ID from an ARN string. The ARN format is 'arn:aws:service:region:account-id:resource'.",
-    "format": "python"
+    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket-name/path/to/file.txt') and extract just the bucket name",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly extract 'my-bucket-name' from various S3 URI formats, handle different path depths, and follow AWS S3 naming rules"
   },
   {
-    "task": "Create a JSON object representing an AWS S3 bucket policy that allows public read access to all objects in the bucket named 'my-public-bucket'.",
-    "format": "json"
+    "task": "Create a JSON configuration object for an AWS Lambda function that includes memory allocation (256 MB), timeout (30 seconds), runtime (python3.11), and environment variables for API_KEY and DB_HOST",
+    "format": "json",
+    "solution_criteria": "The JSON should be valid, include all required Lambda configuration fields, use proper AWS CloudFormation or Lambda API naming conventions, and correctly structure nested objects for environment variables"
   },
   {
-    "task": "Write a regular expression that matches valid AWS EC2 security group IDs. Security group IDs follow the format 'sg-' followed by 8 or 17 hexadecimal characters.",
-    "format": "regex"
+    "task": "Write a Python function that takes an AWS IAM policy ARN string and returns True if it's a customer-managed policy (starts with 'arn:aws:iam::') and False if it's an AWS-managed policy (contains '/service-role/')",
+    "format": "python",
+    "solution_criteria": "The function should correctly distinguish between customer-managed and AWS-managed policies, handle edge cases (None input, invalid formats), and return a boolean value"
   }
 ]
