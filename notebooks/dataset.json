@@ -1,17 +1,18 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket-name/path/to/file.txt') and extract just the bucket name",
-    "format": "regex",
-    "solution_criteria": "The regex should correctly extract 'my-bucket-name' from various S3 URI formats, handle different path depths, and follow AWS S3 naming rules"
-  },
-  {
-    "task": "Create a JSON configuration object for an AWS Lambda function that includes memory allocation (256 MB), timeout (30 seconds), runtime (python3.11), and environment variables for API_KEY and DB_HOST",
-    "format": "json",
-    "solution_criteria": "The JSON should be valid, include all required Lambda configuration fields, use proper AWS CloudFormation or Lambda API naming conventions, and correctly structure nested objects for environment variables"
-  },
-  {
-    "task": "Write a Python function that takes an AWS IAM policy ARN string and returns True if it's a customer-managed policy (starts with 'arn:aws:iam::') and False if it's an AWS-managed policy (contains '/service-role/')",
-    "format": "python",
-    "solution_criteria": "The function should correctly distinguish between customer-managed and AWS-managed policies, handle edge cases (None input, invalid formats), and return a boolean value"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon runner preparing for race day - needs high carbohydrate loading with 4000+ calories to support endurance training",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan totals 4000+ calories with emphasis on carbohydrates (55-65% of total intake)",
+      "Includes 4-5 meals/snacks distributed throughout the day to support marathon training demands",
+      "All meals are vegetarian and nut-free",
+      "Format is compact and concise (suitable for quick reference on race day)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a specific sport discipline (e.g., marathon runner) that requires high carbohydrate loading and specific calorie targets (4000+ calories), ensuring the meal plan addresses sport-specific nutritional demands within the compact format"
   }
 ]
