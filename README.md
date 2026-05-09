@@ -4,11 +4,48 @@ A hands-on learning path for the [Anthropic Claude API](https://docs.anthropic.c
 
 ## What's covered
 
+### Requests & core concepts
+
 | Notebook | Topic |
 |---|---|
 | `001Request.ipynb` | Basic API requests, multi-turn conversations, conversation history |
 | `002Request.ipynb` | System prompts — controlling model behavior and persona |
 | `003Request.ipynb` | Temperature — tuning response creativity and randomness |
+| `004Request.ipynb` | Extended functionality |
+
+### Tool use (function calling)
+
+| Notebook | Topic |
+|---|---|
+| `001_tools.ipynb` | Defining and calling tools |
+| `002_tools_multiple_responses.ipynb` | Handling multiple tool calls in one turn |
+| `003_tool_streaming.ipynb` | Streaming with tool use |
+| `005_text_editor_tool.ipynb` | Building a reusable text editor tool |
+
+### Advanced features
+
+| Notebook | Topic |
+|---|---|
+| `001_thinking.ipynb` | Extended thinking with budget tokens |
+| `002_images.ipynb` | Vision — sending image inputs |
+
+### Prompting & evaluation
+
+| Notebook | Topic |
+|---|---|
+| `001_prompt_evals.ipynb` | Evaluating prompt quality |
+| `002_prompting_completed.ipynb` | Advanced prompting strategies |
+
+### Retrieval-Augmented Generation (RAG)
+
+| Notebook | Topic |
+|---|---|
+| `001_chunking.ipynb` | Text chunking strategies |
+| `002_embeddings.ipynb` | Generating and using embeddings for semantic search |
+| `003_vectordb.ipynb` | Vector database integration |
+| `004_bm25.ipynb` | BM25 lexical search |
+| `005_hybrid.ipynb` | Hybrid search — combining semantic and lexical (Reciprocal Rank Fusion) |
+| `006_web_search.ipynb` | Web search integration |
 
 ## Getting started
 
@@ -55,24 +92,13 @@ Open any notebook in the `notebooks/` folder and run the cells in order.
 
 ```
 anthropic-api-solutions/
-├── notebooks/
-│   ├── 001Request.ipynb   # Conversations & multi-turn chat
-│   ├── 002Request.ipynb   # System prompts
-│   └── 003Request.ipynb   # Temperature control
-├── scr/                   # Standalone Python scripts (in progress)
-├── .env.example           # Environment variable template
-├── requirements.txt       # Python dependencies
+├── notebooks/        # Jupyter notebooks (see table above)
+├── images/           # Image assets used in notebooks
+├── scr/              # Standalone Python scripts
+├── .env.example      # Environment variable template
+├── requirements.txt  # Python dependencies
 └── README.md
 ```
-
-## Roadmap
-
-- [ ] Tool use (function calling)
-- [ ] Vision — image inputs
-- [ ] Streaming responses
-- [ ] Prompt caching
-- [ ] Batch requests
-- [ ] Building a multi-turn CLI chatbot
 
 ## Tech stack
 
